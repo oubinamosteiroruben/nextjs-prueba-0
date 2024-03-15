@@ -1,11 +1,11 @@
 export const getGlobalData = () => {
-  const name = process.env.BLOG_NAME ? decodeURI(process.env.BLOG_NAME) : 'Rubén Oubiña';
-  const blogTitle = process.env.BLOG_TITLE  ? decodeURI(process.env.BLOG_TITLE) : 'Esto es una prueba de edición';
+  const blogTitleFirstLine = process.env.BLOG_TITLE  ? decodeURI(process.env.BLOG_TITLE_FIRST) : 'RUBÉN';
+  const blogTitleSecondLine = process.env.BLOG_TITLE  ? decodeURI(process.env.BLOG_TITLE_SECOND) : 'OUBIÑA';
   const footerText = process.env.BLOG_FOOTER_TEXT    ? decodeURI(process.env.BLOG_FOOTER_TEXT) : 'All rights reserved.';
 
   return {
-    name,
-    blogTitle,
+    blogTitleFirstLine,
+    blogTitleSecondLine,
     footerText,
   };
 };

@@ -1,5 +1,6 @@
 import '../styles/globals.css';
 import 'prismjs/themes/prism-tomorrow.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function MyApp({ Component, pageProps }) {
   return (
